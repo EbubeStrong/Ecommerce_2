@@ -583,6 +583,10 @@ form.search button:hover {
   transform: rotate(90deg);
 }
 
+.site-off nav ul li:nth-child(3) .icon-small {
+  transform: rotate(0deg);
+}
+
 .off-canvas .has-child {
   width: var(--percent100);
 }
@@ -597,6 +601,83 @@ form.search button:hover {
   line-height: 16px;
   margin: 0 0.5em 0.5em 0;
 }
+
+
+
+/* SLider */
+.swiper-slide{
+  position: relative;
+}
+
+.slider .item {
+  position: relative;
+  height: 474px; 
+}
+
+.slider .item::before{
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 450px;
+  height: 300px;
+  background-color: var(--white-color);
+  z-index: 1;
+  filter: blur(50px);
+  opacity: .8;
+}
+
+.slider .text-content {
+  position: relative;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 0 0 10% 10%;
+  z-index: 1;
+}
+
+.slider h3 {
+  font-size: var(--font-small); 
+  font-weight: var(--fontWeight700);
+  width: fit-content;
+  padding: 4px 10px;
+  background-color: var(--dark-color);
+  color: var(--white-color); 
+  border-radius: 4px;
+}
+
+
+.text-content :where(h2, h3) span:first-child {
+  font-weight: var(--fontWeight300);
+  color: var(--light-text-color); 
+}
+
+.text-content :where(h2, h3) span:last-child {
+  color: var(--secondary-color); 
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.txt :where(h2, h3) span:last-child  {
+  color: var(--secondary-dark-color); 
+}
+
+.myslider .swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.myslider .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--secondary-color);
+}
+
+
+
+
+
 
 
 
@@ -794,4 +875,11 @@ form.search button:hover {
     visibility: visible;
     transition: opacity 0.3s ease, visibility 0.3s ease-in-out;
   }
+
+
+  /* SLider */
+.slider > div > .wrapper {
+  width: calc(100% - 300px - 2em);
+  margin-left: auto;
+}
 }

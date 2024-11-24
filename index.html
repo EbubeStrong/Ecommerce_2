@@ -9,6 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div id="page" class="site">
@@ -19,7 +23,9 @@
               <a href="/"><span class="circle"></span>.Store</a>
             </div>
 
-            <a href="" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+            <a href="" class="t-close flexcenter"
+              ><i class="ri-close-line"></i
+            ></a>
           </div>
           <div class="departments"></div>
           <nav></nav>
@@ -90,11 +96,11 @@
                   <ul class="flexitem second-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Shop</a></li>
-                    <li class="has-child">
+                    <li class="has-child fSection">
                       <a href="#"
                         >Women
                         <div class="icon-small">
-                            <i class="ri-arrow-right-s-line"></i>
+                          <i class="ri-arrow-down-s-line"></i>
                         </div>
                       </a>
 
@@ -266,7 +272,7 @@
                             <i class="ri-bear-smile-line"></i>
                           </div>
                           Beauty
-                          <div class="icon-small">
+                          <div class="icon-small i">
                             <i class="ri-arrow-right-s-line"></i>
                           </div>
                         </a>
@@ -289,7 +295,7 @@
                             <i class="ri-bluetooth-connect-line"></i>
                           </div>
                           Electronic
-                          <div class="icon-small">
+                          <div class="icon-small i">
                             <i class="ri-arrow-right-s-line"></i>
                           </div>
                         </a>
@@ -312,7 +318,7 @@
                             <i class="ri-t-shirt-air-line"></i>
                           </div>
                           Women's Fashion
-                          <div class="icon-small">
+                          <div class="icon-small i">
                             <i class="ri-arrow-right-s-line"></i>
                           </div>
                         </a>
@@ -369,7 +375,7 @@
                             <i class="ri-home-5-line"></i>
                           </div>
                           Home & Kitchen
-                          <div class="icon-small">
+                          <div class="icon-small i">
                             <i class="ri-arrow-right-s-line"></i>
                           </div>
                         </a>
@@ -499,9 +505,112 @@
         </div>
       </header>
 
+      <main>
+        <div class="slider">
+          <div class="container">
+            <div class="wrapper">
+              <!-- Swiper container -->
+              <div class="myslider swiper">
+                <!-- Swiper wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Swiper slide -->
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="image object-cover">
+                        <img
+                          src="./assets/slider/slider0.jpg"
+                          alt="Shoes Fashion"
+                        />
+                      </div>
+
+                      <div class="text-content flexcol">
+                        <h3>Shoes Fashion</h3>
+                        <h2>
+                          <span>Come and Get it!</span><br />
+                          <span>Brand New Shoes</span>
+                        </h2>
+                        <a href="#" class="primary-button">Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="image object-cover">
+                        <img
+                          src="./assets/slider/slider1.jpg"
+                          alt="Shoes Fashion"
+                        />
+                      </div>
+
+                      <div class="text-content flexcol txt">
+                        <h3>Quick Fashion Offer</h3>
+                        <h2>
+                          <span>Fit Your Wardrobe</span><br />
+                          <span class="text">With Luxury Items</span>
+                        </h2>
+                        <a href="#" class="primary-button">Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="image object-cover">
+                        <img
+                          src="./assets/slider/slider2.jpg"
+                          alt="Shoes Fashion"
+                        />
+                      </div>
+
+                      <div class="text-content flexcol">
+                        <h3>Quick offer</h3>
+                        <h2>
+                          <span>Wooden Minimal Safe</span><br />
+                          <span>Extra 50% Off</span>
+                        </h2>
+                        <a href="#" class="primary-button">Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="image object-cover">
+                        <img
+                          src="./assets/slider/slider3.jpg"
+                          alt="Shoes Fashion"
+                        />
+                      </div>
+
+                      <div class="text-content flexcol txt">
+                        <h3>Home Workout</h3>
+                        <h2>
+                          <span>Home Workout Accessories</span><br />
+                          <span>Push the limit</span>
+                        </h2>
+                        <a href="#" class="primary-button">Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Swiper slide -->
+
+                  <!-- Additional slides can go here -->
+                </div>
+                <!-- End of Swiper wrapper -->
+
+                <!-- Swiper pagination (optional) -->
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
       <footer></footer>
     </div>
-
+    
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
