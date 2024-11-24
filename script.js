@@ -33,11 +33,8 @@ closeButton.addEventListener("click", () => {
 document.addEventListener("click", (event) => {
   // console.log("Clicked element:", event.target);
 
-  if (
-    !addclass.contains(event.target) &&
-    !menuButton.contains(event.target)
-  ) {
-    if (document.documentElement && document.querySelector('main')) {
+  if (!addclass.contains(event.target) && !menuButton.contains(event.target)) {
+    if (document.documentElement && document.querySelector("main")) {
       // console.log('clicked')
       addclass.classList.remove("showmenu");
     }
@@ -87,34 +84,30 @@ function toggle(e) {
 }
 
 // Icon thats making me reason my life
-  const submenuTwo = document.querySelector(
-    ".off-canvas nav > ul .fSection .icon-small"
+const submenuTwo = document.querySelector(
+  ".off-canvas nav > ul .fSection .icon-small"
 );
-  submenuTwo.addEventListener('click', toggleTwo)
+submenuTwo.addEventListener("click", toggleTwo);
 
-  
 function toggleTwo(e) {
-  e.preventDefault()
+  e.preventDefault();
 
   const parent = document.querySelector(".off-canvas nav > ul .fSection");
   const dropdown = parent.querySelector(":where(ul, .mega)");
-  
-
 
   if (parent && dropdown) {
     if (!parent.classList.contains("expand")) {
       parent.classList.add("expand");
 
       dropdown.style.maxHeight = dropdown.scrollHeight + "px";
-      
-        submenuTwo.style.transform = "rotate(180deg)";
+
+      submenuTwo.style.transform = "rotate(180deg)";
     } else {
       parent.classList.remove("expand");
       dropdown.style.maxHeight = "0";
-      
-        submenuTwo.style.transform = "rotate(0deg)";
+
+      submenuTwo.style.transform = "rotate(0deg)";
     }
-  
   }
 }
 
@@ -130,5 +123,4 @@ document.addEventListener("DOMContentLoaded", function () {
       disableOnInteraction: false, // Keep autoplay even if the user interacts with the swiper
     },
   });
-
 });
