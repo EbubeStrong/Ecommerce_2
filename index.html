@@ -608,41 +608,78 @@
         </div>
 
         <!-- brands -->
-        <div class="brands">
-          <div class="container">
-            <div class="wrapper flexitem">
-              <div class="item">
-                <a href="">
-                  <img src="./assets/brands/asus.png" alt="" />
-                </a>
-              </div>
+       <div class="brands">
+    <div class="wrapper flexitem brand-content">
+      <div class="first-item">
+      <div class="item brand-item">
+        <a href="">
+          <img src="./assets/brands/asus.png" alt="Asus" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/hurley.png" alt="Hurley" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/zara.png" alt="Zara" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/samsung.png" alt="Samsung" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/oppo.png" alt="Oppo" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/dng.png" alt="DNG" />
+        </a>
+      </div>
+      </div>
+      
+      <!-- Duplicate the items for seamless looping -->
+       <div class="second-items">
 
-              <div class="item">
-                <a href="">
-                  <img src="./assets/brands/hurley.png" alt="" />
-                </a>
-              </div>
-
-              <div class="item">
-                <a href="">
-                  <img src="./assets/brands/zara.png" alt="" />
-                </a>
-              </div>
-
-              <div class="item">
-                <a href="">
-                  <img src="./assets/brands/oppo.png" alt="" />
-                </a>
-              </div>
-
-              <div class="item">
-                <a href="">
-                  <img src="./assets/brands/dng.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+       
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/asus.png" alt="Asus" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/hurley.png" alt="Hurley" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/zara.png" alt="Zara" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/samsung.png" alt="Samsung" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/oppo.png" alt="Oppo" />
+        </a>
+      </div>
+      <div class="item">
+        <a href="">
+          <img src="./assets/brands/dng.png" alt="DNG" />
+        </a>
+      </div>
+    </div>
+    </div>
+</div>
 
         <!-- trending -->
         <div class="trending">
@@ -661,10 +698,10 @@
                       <div class="offer">
                         <p>Offer ends at</p>
                         <ul class="flexcenter">
-                          <li>1</li>
-                          <li>15</li>
-                          <li>27</li>
-                          <li>00</li>
+                          <li id="hours">1</li>
+                          <li id="minutes">15</li>
+                          <li id="seconds">27</li>
+                          <li id="milliseconds">00</li>
                         </ul>
                       </div>
                       <div class="media">
@@ -699,9 +736,7 @@
                         </div>
 
                         <h3 class="main-links">
-                          <a href="#"
-                            >Happy Sailed WOmens Summer Bunshot Floral</a
-                          >
+                          <a href="#">Happy Sailed WOmens Summer Boho Floral</a>
                         </h3>
                         <div class="price">
                           <span class="current">$129.99</span>
@@ -711,20 +746,130 @@
                         <div class="stock mini-text">
                           <div class="qty">
                             <span
-                              >Stock: <strong class="qty-available"> </strong
-                            >300</span>
+                              >Stock:
+                              <strong class="qty-available"> </strong>300</span
+                            >
 
                             <span
-                              >Sold: <strong class="qty-available">3,450 </strong
-                            ></span>
+                              >Sold:
+                              <strong class="qty-available"
+                                >3,450
+                              </strong></span
+                            >
+                          </div>
+
+                          <div class="bar">
+                            <div class="available"></div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="row products mini"></div>
-                  <div class="row products mini"></div>
+                  <div class="row products mini">
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail">
+                          <a href="">
+                            <img src="./assets/products/apparel3.jpg" alt="" />
+                          </a>
+                        </div>
+
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href=""><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="discount circle flexcenter">
+                          <span>35%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="#"
+                            >Black Women's Coat Dress</a
+                          >
+                        </h3>
+
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mim-text">(2,549)</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="current">$129.99</span>
+                          <span class="normal mini-text">$199.98</span>
+                        </div>
+
+                        <div class="mini-text">
+                          <p>2985 sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row products mini">
+                    <div class="item">
+                      <div class="media">
+                        <div class="thumbnail">
+                          <a href="">
+                            <img src="./assets/products/shoe1.jpg" alt="" />
+                          </a>
+                        </div>
+
+                        <div class="hoverable">
+                          <ul>
+                            <li class="active">
+                              <a href=""><i class="ri-heart-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-eye-line"></i></a>
+                            </li>
+                            <li>
+                              <a href=""><i class="ri-shuffle-line"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="discount circle flexcenter">
+                          <span>35%</span>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <h3 class="main-links">
+                          <a href="#"
+                            >Men Slip On Shoes Casual with Arch Support
+                            Insolet</a
+                          >
+                        </h3>
+
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mim-text">(2,549)</span>
+                        </div>
+
+                        <div class="price">
+                          <span class="current">$129.99</span>
+                          <span class="normal mini-text">$199.98</span>
+                        </div>
+
+                        <div class="mini-text">
+                          <p>2985 sold</p>
+                          <p>Free Shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

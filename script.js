@@ -124,3 +124,19 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+
+// Countdown Timer
+// Set the initial time (for example, 1 hour, 15 minutes, 27 seconds, and 00 milliseconds)
+let hours = 1;
+let minutes = 15;
+let seconds = 27;
+let milliseconds = 0;
+
+// Function to update the countdown
+function updateCountdown() {
+  
+}
+
+// Set the interval to update the countdown every 10 milliseconds
+let countdownInterval = setInterval(updateCountdown, 10);
