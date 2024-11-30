@@ -953,15 +953,32 @@ form.search button:hover {
 }
 
 .products:where(.mini, .main) h3 {
-  font-weight: var(--fontWeight600);
+  font-weight: var(--fontWeight500);
+}
+
+
+
+/* Product Main Product */
+.products.main .item{
+  flex-direction: column;
+  flex: 0 0 100%;
+  padding: 0 0.930em;
+  padding-bottom: 2em;
+}
+
+.products.main .media {
+  height: 390px;
 }
 
 
 
 
-
-
-
+/* Responsiveness */
+@media screen and (min-width: 481px) {
+  .products.main .item{
+    flex: 0 0 50%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .produ .price .current {
@@ -970,6 +987,10 @@ form.search button:hover {
 
   .products.mini{
     flex: 0 0 50%;
+  }
+
+  .products.main .item{
+    flex: 0 0 33.33%;
   }
 }
 
@@ -1179,5 +1200,9 @@ form.search button:hover {
 
   .products.big .media {
     max-height: 323px;
+  }
+
+  .products.mini{
+    flex: 0 0 25%;
   }
 }
