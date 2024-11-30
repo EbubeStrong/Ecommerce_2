@@ -15,6 +15,7 @@
   --percent100: 100%;
   --percernt50: 50%;
   --fontWeight300: 300;
+  --fontWeight400: 400;
   --fontWeight500: 500;
   --fontWeight600: 600;
   --fontWeight700: 700;
@@ -675,49 +676,25 @@ form.search button:hover {
 }
 
 /* Brands */
-.brands {
+.brand-content {
   position: relative;
-  padding: 2em 0;
+  padding: 1em 0;
   width: 100%;
-  overflow: hidden; /* Hide anything outside the container */
-  border: 2px solid red;
-}
-
-/* .brands .wrapper {
-  display: flex; 
-  Ensure the items are laid out horizontally
-} */
-
-.first-item,
-.second-items {
-  display: flex;
-  gap: 2rem;
-  animation: scrollLeft 10s linear infinite; /* Common animation for both */
-  flex-shrink: 0;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .first-item {
-  /* Moves from right to left */
-  animation-delay: 0s; /* Starts immediately */
-}
-
-.second-items {
-  /* Moves from right to left but starts with a delay */
-  animation-delay: 2s; /* Starts after the first set */
-}
-
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(100%); /* Start from the right outside of view */
-  }
-  100% {
-    transform: translateX(-100%); /* End at the left outside of view */
-  }
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .brands .item img {
   opacity: 0.25;
   transition: opacity 0.3s;
+  height: var(--percent100);
+  width: 150px;
 }
 
 .brands .item a:hover img {
@@ -916,6 +893,84 @@ form.search button:hover {
   border-radius: 7px;
   max-width: 400px;
   margin: 0 auto;
+}
+
+.products .price .normal {
+  color: var(--light-text-color);
+  text-decoration: line-through;
+}
+
+.products .stock .qty {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products .stock .bar {
+  height: 3px;
+  margin-top: 1em;
+  background-color: var(--border-color);
+  overflow: hidden;
+}
+
+.products .stock .available {
+  height: 3px;
+  width: 21%;
+  background-color: var(--secondary-dark-color);
+}
+
+.products .item{
+  display: flex;
+  position: relative;
+}
+
+
+.products .stock-danger{
+  color: var(--primary-color);
+}
+
+.flexwrap .row{
+  flex: 0 0 100%;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+
+
+/* mini products */
+.products.mini .item {
+  margin-bottom: 2em;
+}
+
+.products.mini .media {
+  height: 160px;
+  width: 130px;
+  margin-right: 1.25em;
+}
+
+.products.mini .content {
+  margin: 0;
+  gap: 0.75em;
+}
+
+.products:where(.mini, .main) h3 {
+  font-weight: var(--fontWeight600);
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .produ .price .current {
+    font-size: 1.25em;
+  }
+
+  .products.mini{
+    flex: 0 0 50%;
+  }
 }
 
 @media screen and (min-width: 992px) {
