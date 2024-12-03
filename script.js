@@ -135,8 +135,22 @@ let milliseconds = 0;
 
 // Function to update the countdown
 function updateCountdown() {
-  document.query
+  // document.query
 }
 
 // Set the interval to update the countdown every 10 milliseconds
 let countdownInterval = setInterval(updateCountdown, 10);
+
+
+
+// Show Search
+const searchButton = document.querySelector(".t-search"),
+  tClose = document.querySelector(".search-close"),
+  showClass = document.querySelector(".site");
+
+searchButton.addEventListener('click', function () {
+    showClass.classList.toggle('showsearch')
+})
+tClose.addEventListener('click', function () {
+  showClass.classList.remove('showsearch')
+})
