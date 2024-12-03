@@ -135,7 +135,7 @@ let milliseconds = 0;
 
 // Function to update the countdown
 function updateCountdown() {
-  
+  document.query
 }
 
 // Set the interval to update the countdown every 10 milliseconds
