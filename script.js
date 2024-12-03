@@ -128,14 +128,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Countdown Timer
 // Set the initial time (for example, 1 hour, 15 minutes, 27 seconds, and 00 milliseconds)
-let hours = 1;
-let minutes = 15;
-let seconds = 27;
+let hours = 5;
+let minutes = 59;
+let seconds = 59;
 let milliseconds = 0;
 
 // Function to update the countdown
 function updateCountdown() {
-  // document.query
+  document.querySelector("#hours").textContent = hours < 10 ? '0' + hours : hours
+  document.querySelector("#minutes").textContent = minutes < 10 ? '0' + minutes : minutes
+  document.querySelector("#seconds").textContent = seconds < 10 ? '0' + seconds : seconds
+  document.querySelector("#milliseconds").textContent = milliseconds < 10 ? '0' + milliseconds : milliseconds
+
+  if (milliseconds > 0) {
+    milliseconds--
+  } else if (seconds > 0) {
+    seconds--
+    milliseconds = 99
+  } else if (minutes > 0) {
+    minutes--
+    seconds = 59
+    milliseconds = 99
+  } else if (hours > 0) {
+    hours--
+    minutes = 59
+    seconds = 59
+    milliseconds = 99
+  } else {
+    clearInterval(countdownInterval)
+    alert("Countdown finished")
+  }
 }
 
 // Set the interval to update the countdown every 10 milliseconds
